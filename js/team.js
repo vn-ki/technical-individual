@@ -3,52 +3,52 @@ const members = [
 		id: 1,
 		name: "alpha",
 		description: "i am a member of xyz abc",
-		img: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
+		img: 'img/team/matthew.png',
 	},
 	{
 		id: 2,
 		name: "beta",
 		description: "i am a member of xyz abc",
-		img: 'https://semantic-ui.com/images/avatar2/large/molly.png',
+		img: 'img/team/molly.png',
 	},
 	{
 		id: 1,
 		name: "gamma",
 		description: "i am a member of xyz abc",
-		img: 'https://semantic-ui.com/images/avatar2/large/elyse.png',
+		img: 'img/team/elyse.png',
 	},
 	{
 		id: 1,
 		name: "alpha",
 		description: "i am a member of xyz abc",
-		img: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
+		img: 'img/team/matthew.png',
 	},
 	{
 		id: 1,
 		name: "alpha",
 		description: "i am a member of xyz abc",
-		img: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
+		img: 'img/team/matthew.png',
 	},
 	{
 		id: 1,
 		name: "alpha",
 		description: "i am a member of xyz abc",
-		img: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
+		img: 'img/team/matthew.png',
 	}
 ]
 
 
 Vue.component('member-component', {
 	template: `
-			<span class="inline">
+			<div class="inline">
 				<div class="image">
-					<img :src="member.img" alt="images" height="200px" width="200px">
+					<img :src="member.img" alt="images" height="250px" width="250px">
 				</div>
 				<div class="name">
 					<strong>{{member.name}}</strong>
 				</div>
 				<br class="clearboth" />
-			</span>
+			</div>
 	`,
 	props: {
     member: Object
