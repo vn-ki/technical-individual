@@ -1,0 +1,36 @@
+
+.team1 {
+	background-color: #555;
+}
+
+.text {
+	text-align: center;
+	margin-top: 2em;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.5em;
+	margin-bottom: 30px;
+}
+
+.inline {
+	float: left;
+	margin-left: 100px;
+	margin-bottom: 30px;
+}
+
+.clearboth { 
+	clear:both;
+}
+
+.team2 {
+	background-color: #555;
+	overflow: hidden;
+}
+
+.name {
+	text-align: center;
+}
+
+img {
+	border-radius: 50%;
+}
+
