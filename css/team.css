@@ -1,0 +1,43 @@
+
+.team1 {
+	background-color: #555;
+}
+
+.text {
+	padding-top: 0.5em;
+	text-align: center;
+	margin-top: 0em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	color: white;
+}
+
+.inline {
+	display: inline-block;
+	margin-bottom: 30px;
+	padding: 2em 4em;
+}
+
+.clearboth { 
+	clear:both;
+}
+
+.team2 {
+	background-color: #555;
+	text-align: center;
+	overflow: hidden;
+	align-content: center;
+}
+
+.name {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 30px;
+}
+
+img {
+	border-radius: 50%;
+}
+
