@@ -39,15 +39,7 @@
     <div class="container">
         <h1 class="display-2">Projects</h1>
         <div class="row" id="app-project">
-            <div class="col-lg-4" v-for="project in projects">
-                <div  class="card my-3">
-                    <img :src="project.bgImage" alt="">
-                    <div class="card-img-overlay">
-                        <h4 class="card-header">{{project.name}}</h4>
-                        <p class="card-body">{{project.description}}</p>
-                    </div>
-                </div>
-            </div>
+            <project-component v-for="project in projects" :project="project"></project-component>
         </div>
     </div>
     <script src="vendor/vue/vue.js"></script>
