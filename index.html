@@ -10,30 +10,74 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-light container">
-            <a class="navbar-brand" href="index.html">THE CLUB</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-5">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item mr-5">
-                        <a class="nav-link" href="projects.html">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">TEAM</a>
-                    </li>
-                </ul>
+    <div class="container-fluid parallax" id="main">
+        <div class="overlay" id="mainOverlay">
+            <nav class="navbar navbar-expand-sm navbar-light container">
+                <a class="navbar-brand text-white" href="index.html">P;CLUB</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link text-white" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link text-white" href="projects.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="team.html">TEAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <h1 class="display-3 text-white" style="padding-top: 1.5em">THE<br>PROGRAMM;NG CLUB</h1><hr class="bg-white">
+                <h1 class="display-3" style="padding-bottom: 1em">ALL WE NEED<br>IS COFFE</h1>
+                <p class="text-white" style="font-family: 'Open Sans', sans-serif;font-size: 1.25em;padding-bottom: 5em;font-weight: 500">*CODING SINCE 2008</p>
             </div>
-        </nav>
+            <div class="bg-dark" id="achievements">
+                <div class="container">
+                    <svg width="42" height="14">
+                        <rect width="48" height="12" fill="white"></rect>
+                    </svg>
+                    <h1 class="display-3 text-white">Achievements</h1>
+                    <div class="row text-white">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-unstyled">First item</li>
+                                <li class="list-unstyled">Second item</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-unstyled">Third item</li>
+                                <li class="list-unstyled">Fourth item</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid parallax" id="secondary">
+                <div class="overlay" id="secondaryOverlay">
+                    <div class="container">
+                        <svg width="42" height="14">
+                            <rect width="48" height="12" fill="rgb(25,118,210)"></rect>
+                        </svg>
+                        <h1 class="display-3 text-dark">Events</h1>
+                        <ul class="list-group text-dark">
+                            <li class="list-unstyled">First item</li>
+                            <li class="list-unstyled">Second item</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="vendor/vue/vue.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
