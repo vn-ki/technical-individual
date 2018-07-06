@@ -35,27 +35,28 @@
   line-height: 0.95em;
 }
 
-#achievements {
+#blogposts {
   padding: 5em 0em;
 }
 
-#achievements .display-3 {
+#blogposts .display-3 {
   padding: 0.25em 0em;
 }
 
-#achievements .list-group {
+#blogposts .post {
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+          box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
 }
 
-#achievements .list-group .list-unstyled {
-  font-size: 1.25em;
-  list-style-type: square;
-  padding: 0.5em;
-  margin-left: 1em;
-  /*margin-bottom: 1em;
-            padding: 0.75em;
-            border-radius: 0.5em;
-            background: linear-gradient(135deg, rgba(25,117,210,1) 0%, rgba(40,133,214,1) 100%);*/
+#blogposts .post h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 #secondary {
@@ -72,19 +73,32 @@
   padding: 0.25em 0em;
 }
 
-#secondary #secondaryOverlay .list-group {
-  font-family: 'Open Sans', sans-serif;
+#secondary #carouselId .carousel-inner {
+  border-radius: 1.25em;
 }
 
-#secondary #secondaryOverlay .list-group .list-unstyled {
+#secondary #carouselId .carousel-caption {
+  top: 10%;
+  text-align: left;
+}
+
+#secondary #carouselId .display-3 {
+  font-size: 2.5em;
+  letter-spacing: 0px;
+}
+
+#secondary #carouselId p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
-  /*list-style-type: square;
-                padding: 0.5em;
-                margin-left: 1em;*/
-  margin-bottom: 1em;
-  padding: 0.75em;
-  border-radius: 0.5em;
-  background: white;
-  box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+}
+
+#footer h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  padding: 0.25em 0em;
+}
+
+#footer i {
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=home.css.map */
