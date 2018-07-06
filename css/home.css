@@ -75,6 +75,8 @@
 
 #secondary #carouselId .carousel-inner {
   border-radius: 1.25em;
+  -webkit-box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+          box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
 }
 
 #secondary #carouselId .carousel-caption {
