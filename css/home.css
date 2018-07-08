@@ -27,9 +27,22 @@
   background-color: rgba(25, 118, 210, 0.75);
 }
 
+#main .nav-link {
+  border-radius: 1em;
+  padding: 0.08em 1em;
+  color: white;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+#main .nav-link:hover {
+  color: rgba(25, 118, 210, 0.75);
+  background-color: white;
+}
+
 .display-3 {
   font-size: 5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: -3px;
   line-height: 0.95em;
@@ -43,20 +56,32 @@
   padding: 0.25em 0em;
 }
 
-#blogposts .post {
+#blogposts .card {
   background-color: white;
   border-radius: 0.5em;
-  padding: 0.5em;
   margin-bottom: 1em;
   -webkit-box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
           box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25em;
+  -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-#blogposts .post h3 {
-  font-family: 'Montserrat', sans-serif;
+#blogposts .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#blogposts .card .card-title {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+#blogposts .card img {
+  border-radius: 0.5em 0.5em 0em 0em;
 }
 
 #secondary {
@@ -75,8 +100,13 @@
 
 #secondary #carouselId .carousel-inner {
   border-radius: 1.25em;
+  min-height: 30em;
   -webkit-box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
           box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+}
+
+#secondary #carouselId img {
+  min-height: 30em;
 }
 
 #secondary #carouselId .carousel-caption {
@@ -90,17 +120,39 @@
 }
 
 #secondary #carouselId p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25em;
 }
 
 #footer h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
   padding: 0.25em 0em;
 }
 
 #footer i {
-  font-size: 1.5em;
+  font-size: 1.25em;
+}
+
+#footer p {
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  vertical-align: 0.05em;
+}
+
+#footer a {
+  border: 0.1em white solid;
+  color: white;
+  border-radius: 1em;
+  padding: 0.25em 1em;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+#footer a:hover {
+  background-color: white;
+  color: #343a40;
+  text-decoration: none;
 }
 /*# sourceMappingURL=home.css.map */
