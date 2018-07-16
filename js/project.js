@@ -1,53 +1,56 @@
-Vue.component('project-component',{
-  data: function(){
+Vue.component("project-component", {
+  data: function() {
     return {
-      projects : [
+      projects: [
         {
-          id : 0,
-          name: 'Project Name',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-          bgImage: 'img/Vue.js_Logo.png'
+          id: 0,
+          name: "Project Name",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+          image: "img/project/game1.png"
         },
         {
-          id : 1,
-          name: 'Project Name2',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-          bgImage: 'img/Vue.js_Logo.png'
+          id: 1,
+          name: "Project Name2",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+          image: "img/project/software1.svg"
         },
         {
-          id : 2,
-          name: 'Project Name3',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-          bgImage: 'img/Vue.js_Logo.png'
+          id: 2,
+          name: "Project Name3",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+          image: "img/project/web1.svg"
         },
         {
-          id : 3,
-          name: 'Project Name4',
-          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-          bgImage: 'img/Vue.js_Logo.png'
+          id: 3,
+          name: "Project Name4",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+          image: "img/project/VueLogo.png"
         }
-      ],
-      colors: ['rgba(109,33,79,0.75)',
-        'rgba(24,44,97,0.75)',
-        'rgba(39,174,96,0.75)',
-        'rgba(22,160,133,0.75)',
-        'rgba(249,127,81,0.75)',
-        'rgba(192,57,43,0.75)'
-        ]
-  }},
-  template: `<div class="row">
-    <div class="col-lg-4" v-for="project in projects" :key="project.id">
-      <div  class="card my-3">
-          <img :src="project.bgImage" alt="">
-            <div class="card-img-overlay" :style="{backgroundColor : colors[project.id%6]}">
-                <h4 class="card-header">{{project.name}}</h4>
-                <p class="card-body">{{project.description}}</p>
-            </div>
+      ]
+    };
+  },
+  template: `
+    <div class="team row">
+      <div class="col-lg-4 d-flex align-items-stretch" v-for="project in projects" :key="project.id">
+        <div class="card">
+          <div class="profile-container">
+            <img class="card-img-top" :src="project.image" alt="">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{project.name}}</h3>
+            <p class="card-text mb-2">{{project.description}}</p>
+            <a href="#"><i class="fab fa-github"></i> </a>
+          </div>
         </div>
-    </div></div>
+      </div>
+    </div>
   `
 });
 
 new Vue({
-  el: '#app-project'
+  el: "#app"
 });

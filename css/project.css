@@ -110,11 +110,7 @@ body {
 }
 
 .card .profile-container {
-  padding: 2em 3em 0em 3em;
-}
-
-.card .profile-container img {
-  border-radius: 50%;
+  padding: 2em 2em 0em 2em;
 }
 
 #app a {
@@ -131,4 +127,4 @@ body {
 #app i {
   font-size: 1.3em;
 }
-/*# sourceMappingURL=team.css.map */
+/*# sourceMappingURL=project.css.map */
