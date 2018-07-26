@@ -18,7 +18,15 @@
   background-image: url("/img/home/main.jpg");
   height: 100%;
   #mainOverlay {
-    background-color: rgba(25, 118, 210, 0.75);
+    //background-color: rgba(25, 118, 210, 0.75);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(25, 118, 210, 0.8),
+      rgba(71, 115, 206, 0.8),
+      rgba(96, 111, 200, 0.8),
+      rgba(114, 108, 194, 0.8),
+      rgba(129, 105, 187, 0.8)
+    );
   }
 }
 

@@ -4,48 +4,55 @@ const members = [
     name: "alpha",
     description: "Competitive Coding",
     img: "img/team/matthew.png",
-    contact: "9999999999",
-    year: "First Year"
+    year: "First Year",
+    linkGit: "",
+    linkLin: ""
   },
   {
     id: 2,
     name: "beta",
     description: "Competitive Coding",
     img: "img/team/molly.png",
-    contact: "9999999999",
-    year: "Second Year"
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
   },
   {
-    id: 1,
+    id: 3,
     name: "gamma",
     description: "Development",
     img: "img/team/elyse.png",
     contact: "9999999999",
-    year: "Second Year"
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
   },
   {
-    id: 1,
+    id: 4,
     name: "alpha",
     description: "Cyber Security",
     img: "img/team/matthew.png",
-    contact: "9999999999",
-    year: "Third Year"
+    year: "Third Year",
+    linkGit: "",
+    linkLin: ""
   },
   {
-    id: 1,
+    id: 5,
     name: "alpha",
     description: "Cyber Security",
     img: "img/team/matthew.png",
-    contact: "9999999999",
-    year: "First Year"
+    year: "First Year",
+    linkGit: "",
+    linkLin: ""
   },
   {
-    id: 1,
+    id: 6,
     name: "alpha",
     description: "Development",
     img: "img/team/matthew.png",
-    contact: "9999999999",
-    year: "First Year"
+    year: "First Year",
+    linkGit: "",
+    linkLin: ""
   }
 ];
 
@@ -56,7 +63,9 @@ const heads = [
     description: "Club Head",
     img: "img/team/matthew.png",
     contact: "9999999999",
-    year: "Third Year"
+    year: "Third Year",
+    linkGit: "",
+    linkLin: ""
   },
   {
     id: 2,
@@ -64,13 +73,15 @@ const heads = [
     description: "Club Head",
     img: "img/team/molly.png",
     contact: "9999999999",
-    year: "Third Year"
+    year: "Third Year",
+    linkGit: "",
+    linkLin: ""
   }
 ];
 
 Vue.component("member-component", {
   template: `
-	<div class="col-lg-4">
+	<div class="col-lg-3">
 		<div class="card">
 			<div class="profile-container">
 				<img class="card-img-top" :src="member.img" alt="Card image cap">
@@ -79,7 +90,8 @@ Vue.component("member-component", {
     			<h5 class="card-title">{{member.name}}</h5>
 				  <p class="card-text">{{member.description}}</p>
 				  <p class="card-text mb-2">{{member.year}}</p>
-    			<a href="#"><i class="fab fa-github"></i> </a>
+          <a :href="member.linkGit"><i class="fab fa-github"></i> </a>
+          <a :href="member.linkLin"><i class="fab fa-linkedin"></i> </a>
   			</div>
 		</div>
 	</div>
@@ -100,7 +112,8 @@ Vue.component("head-component", {
 	    		<h5 class="card-title">{{head.name}}</h5>
 				  <p class="card-text">{{head.description}}</p>
 				  <p class="card-text mb-2">{{head.year}}</p>
-    			<a href="#"><i class="fab fa-github"></i> </a>
+          <a :href="head.linkGit"><i class="fab fa-github"></i> </a>
+          <a :href="head.linkLin"><i class="fab fa-linkedin"></i> </a>
   			</div>
 		</div>
 	</div>
