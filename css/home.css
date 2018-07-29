@@ -150,6 +150,8 @@
 
 #secondary #carouselId img {
   min-height: 30em;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
 }
 
 #secondary #carouselId .carousel-caption {
