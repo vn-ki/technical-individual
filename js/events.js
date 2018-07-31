@@ -3,7 +3,7 @@ Vue.component("event-component", {
     return {
       events: [
         {
-          id: 1,
+          id: 0,
           image: "/img/home/events/dbz.jpg",
           title: "DIVIDE BY ZERO 6.0",
           about:
@@ -12,7 +12,7 @@ Vue.component("event-component", {
           clas:"active"
         },
         {
-          id: 2,
+          id: 1,
           image: "/img/home/events/hackathon.jpg",
           title: "Hackathon",
           about:
@@ -20,7 +20,7 @@ Vue.component("event-component", {
           cls: "carousel-item"
         },
         {
-          id: 3,
+          id: 2,
           image: "/img/home/events/ctf.jpg",
           title: "Capture The Flag",
           about:
@@ -28,7 +28,7 @@ Vue.component("event-component", {
           cls: "carousel-item"
         },
         {
-          id: 4,
+          id: 3,
           image: "/img/home/events/fool_you.png",
           title: "Fool You!",
           about:
