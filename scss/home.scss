@@ -60,7 +60,7 @@
   background-image: url("/img/home/other.jpg");
   height: 100%;
   #secondaryOverlay {
-    background-color: rgba(255, 255, 255, 0.75);
+    // background-color: rgba(255, 255, 255, 0.75);
     padding: 5em 0em;
     .display-3 {
       padding: 0.25em 0em;
@@ -104,4 +104,15 @@
 
 .cute-btn {
     font-family: $montserrat;
+    // padding: 0.5em 15em 1em 15em;
+}
+
+.slack {
+  background: #8E2DE2 !important;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2) !important;
+  background: linear-gradient(to right, #4A00E0, #8E2DE2) !important;
+}
+
+.text-white {
+  color: white;
 }
