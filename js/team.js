@@ -10,11 +10,11 @@ const members = [
   },
   {
     id: 2,
-    name: "ARJUN SRIVASTAVA",
-    description: "MACHINE LEARNING",
-    img: "https://avatars0.githubusercontent.com/u/9380108?s=460&v=4",
+    name: "ASHUTOSH BANG",
+    description: "COMPETITIVE PROGRAMMING",
+    img: "https://avatars0.githubusercontent.com/u/24517273?s=460&v=4",
     year: "Third Year",
-    linkGit: "https://github.com/arjunbazinga",
+    linkGit: "https://github.com/ashutoshbang",
     linkLin: ""
   },
   {
