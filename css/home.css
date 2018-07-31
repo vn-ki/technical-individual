@@ -117,6 +117,9 @@
 #secondary #secondaryOverlay .display-3 {
   padding: 0.25em 0em;
 }
+#secondary .lighten {
+  background-color: rgba(255, 255, 255, 0.75);
+}
 #secondary #carouselId .carousel-inner {
   border-radius: 1.25em;
   min-height: 30em;
