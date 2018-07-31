@@ -8,7 +8,8 @@ Vue.component("event-component", {
           title: "DIVIDE BY ZERO 6.0",
           about:
             " Our flagship event, a short duration competitive programming contest.",
-          cls: "carousel-item active"
+          cls: "carousel-item active",
+          clas:"active"
         },
         {
           id: 2,
@@ -38,14 +39,27 @@ Vue.component("event-component", {
     };
   },
   template: `
-  <div class="carousel-inner" role="listbox" id="eventsHere">
-  <div :class="event.cls" v-for="event in events" :key=event.id>
-    <img class="img-fluid" :src="event.image" alt="First slide">
-    <div class="carousel-caption">
-      <h3 class="display-3">{{event.title}}</h3>
-      <p>{{event.about}}</p>
+ <div id="carouselId" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li v-for="event in events" data-target="#carouselId" :data-slide-to="event.id" :class="event.clas"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox" id="eventsHere">
+      <div :class="event.cls" v-for="event in events" :key=event.id>
+        <img class="img-fluid" :src="event.image" alt="First slide" style="width: 100%;">
+        <div class="carousel-caption">
+          <h3 class="display-3">{{event.title}}</h3>
+          <p>{{event.about}}</p>
+        </div>
+      </div>
     </div>
-  </div>
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
   </div>
   `
 });
