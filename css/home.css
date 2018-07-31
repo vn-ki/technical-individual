@@ -13,6 +13,7 @@
 
 .naav {
   border-radius: 1em;
+  font-size: 15px;
   padding: 0.08em 1em;
   color: white;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -152,6 +153,10 @@
 
 .btn:hover {
   -webkit-transform: scale(1.1);
+}
+
+.cute-btn {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=home.css.map */
