@@ -2,6 +2,7 @@ sudo: false
 addons:
   ssh_known_hosts: people.iiti.ac.in
 before_install:
+  - echo $PASSWORD
   - openssl enc -aes-256-cbc -d -in sshkey.enc -out sshkey.pem -k $PASSWORD
 script:
   - ssh -i sshkey.pem progclub@people.iiti.ac.in 'rm -rf public_html/*'
