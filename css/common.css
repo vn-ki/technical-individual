@@ -1,62 +1,50 @@
 @media (max-width: 720px) {
   body {
-    font-size: 10px;
-  }
-}
+    font-size: 10px; } }
 .navbar {
-  font-family: "Montserrat", sans-serif;
-}
-.navbar .navbar-brand {
-  font-weight: bold;
-  letter-spacing: 0.15em;
-}
+  font-family: "Montserrat", sans-serif; }
+  .navbar .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.15em; }
 
 .naav {
   border-radius: 1em;
   font-size: 15px;
   padding: 0.08em 1em;
   color: white;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-}
-.naav:hover {
-  text-decoration: none;
-  color: rgba(25, 118, 210, 0.75);
-  background-color: white;
-}
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out; }
+  .naav:hover {
+    text-decoration: none;
+    color: rgba(25, 118, 210, 0.75);
+    background-color: white; }
 
 .display-3 {
   font-size: 5em;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: -3px;
-  line-height: 0.95em;
-}
+  line-height: 0.95em; }
 
 #footer h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.25em;
-  padding: 0.25em 0em;
-}
+  padding: 0.25em 0em; }
 #footer i {
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 #footer p {
   display: inline;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  vertical-align: 0.05em;
-}
-#footer a {
+  vertical-align: 0.05em; }
+#footer a.rounded {
   border: 0.1em white solid;
   color: white;
   border-radius: 1em;
   padding: 0.25em 1em;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-}
-#footer a:hover {
-  background-color: white;
-  color: #343a40;
-  text-decoration: none;
-}
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out; }
+  #footer a.rounded:hover {
+    background-color: white;
+    color: #343a40;
+    text-decoration: none; }
 
 /*# sourceMappingURL=common.css.map */
