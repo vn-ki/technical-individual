@@ -1,6 +1,7 @@
 sudo: false
 script:
   - openssl enc -aes-256-cbc -d -in sshkey.enc -out sshkey.pem -k $PASSWORD
+  - ssh-keyscan people.iiti.ac.in >> ~/.ssh/known_hosts
   - ssh -i sshkey.pem progclub@people.iiti.ac.in 'rm -rf public_html/*'
   - scp -i sshkey.pem -r . progclub@people.iiti.ac.in:public_html/
 branches:
