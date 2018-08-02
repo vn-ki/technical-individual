@@ -1,12 +1,12 @@
 sudo: false
+language: generic
 addons:
   ssh_known_hosts: people.iiti.ac.in
 before_install:
-  - openssl aes-256-cbc -K $encrypted_5b7221e30501_key -iv $encrypted_5b7221e30501_iv -in sshkey.pem.enc -out sshkey.pem -d
+  - openssl enc -aes-256-cbc -d -md md5 -in sshkey.pem.enc -out sshkey.pem -k $PASSWORD
 script:
   - chmod 600 sshkey.pem
-  - ssh -i sshkey.pem progclub@people.iiti.ac.in 'rm -rf public_html/*'
-  - scp -i sshkey.pem -r . progclub@people.iiti.ac.in:public_html/
+  - rsync -rcve 'ssh -i sshkey.pem' . progclub@people.iiti.ac.in:~/public_html/ --ignore-existing --exclude '.git/**' --delete-after
 branches:
   only:
     - home
