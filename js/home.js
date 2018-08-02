@@ -2,7 +2,7 @@ new Vue({
   el: "#blogposts",
   data: {
     link: ["index.html", "team.html", "projects.html"],
-    posts: ['hiii']
+    posts: []
   },
   methods: {
     openblog(num) {
